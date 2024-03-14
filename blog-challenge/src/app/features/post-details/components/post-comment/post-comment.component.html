@@ -1,0 +1,27 @@
+<section class="comment">
+  <div class="comment__info">
+    <address>
+      {{ comment.user }} <span>{{ "says" | translate }}:</span>
+    </address>
+    <time>{{ comment.date | date }}</time>
+  </div>
+  <div class="comment__content">
+    <p>{{ comment.content }}</p>
+  </div>
+</section>
+@if (!isReplying() && !isEditing()) {
+<section class="actions">
+  <button aria-label="Edit" type="button" (click)="startEdit()">
+    {{ "edit" | translate }}
+  </button>
+  <button aria-label="Reply" type="button" (click)="startReply()">
+    {{ "reply" | translate }}
+  </button>
+</section>
+} @else {
+<app-comment-form
+  [action]="commentAction"
+  (cancelEvent)="handleCancel()"
+  (submitEvent)="handleSubmit($event)"
+/>
+}

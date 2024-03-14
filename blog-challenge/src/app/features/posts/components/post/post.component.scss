@@ -1,0 +1,26 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 24px;
+  margin-bottom: 28px;
+  background-color: var(--color-main-lighter);
+  transition: box-shadow 0.1s ease 0.1s, transform 0.1s ease 0.1s;
+
+  &:hover {
+    box-shadow: 4px 4px 6px 0px var(--color-main-light);
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+
+  &__footer {
+    display: inherit;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}

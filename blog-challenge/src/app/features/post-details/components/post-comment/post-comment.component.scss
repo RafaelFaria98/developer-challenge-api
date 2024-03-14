@@ -1,0 +1,44 @@
+.comment {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+
+  &__info {
+    display: inherit;
+    flex-direction: column;
+    min-width: 180px;
+
+    address span {
+      font-style: normal;
+    }
+  }
+
+  &__content {
+    display: inherit;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+
+  button {
+    min-width: 60px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: var(--color-main);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-main-dark);
+    }
+  }
+}

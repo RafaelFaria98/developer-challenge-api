@@ -1,0 +1,14 @@
+<app-language-selector />
+
+<input
+  quickSearch
+  aria-label="Search"
+  aria-required="false"
+  class="quick-search"
+  type="text"
+  [placeholder]="'quickSearch' | translate"
+  (valueChanged)="filterPosts($event)"
+/>
+@for (post of posts(); track post.id) {
+<app-post [post]="post" />
+}
