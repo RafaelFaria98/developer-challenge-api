@@ -1,0 +1,21 @@
+{
+  "portuguese": "Português",
+  "english": "Inglês",
+  "quickSearch": "Pesquise por título do post",
+  "by": "Por",
+  "addNewCommentTitle": "Eu tenho algo a dizer sobre este post",
+  "commentsTitle": "O que as pessoas dizem sobre este post?",
+  "says": "diz",
+  "edit": "Editar",
+  "reply": "Responder",
+  "name": "Nome",
+  "comment": "Comentário",
+  "namePlaceholder": "Insira seu nome aqui",
+  "commentPlaceholder": "Insira seu comentário aqui",
+  "submit": "Enviar",
+  "cancel": "Cancelar",
+  "editComment": "Editar comentário",
+  "replyComment": "Responder comentário",
+  "addNewComment": "Adicionar novo comentário",
+  "backToPosts": "Voltar aos posts"
+}

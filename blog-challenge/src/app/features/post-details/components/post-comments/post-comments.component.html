@@ -1,0 +1,11 @@
+@for (comment of comments; track comment.id) {
+<section class="comment">
+  <app-post-comment [comment]="comment" />
+</section>
+@if (comment.replies.length > 0) {
+<section class="comment__replies">
+  <app-post-comments [comments]="comment.replies" />
+</section>
+} } @empty {
+<p>There are no comments about this post.</p>
+}

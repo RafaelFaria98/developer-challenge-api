@@ -1,0 +1,24 @@
+.post-details {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 60px;
+
+  &__info {
+    min-width: 200px;
+  }
+}
+
+.add-comment {
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  min-height: 40px;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  padding: 12px;
+
+  &:hover {
+    background-color: var(--color-main-dark);
+  }
+}

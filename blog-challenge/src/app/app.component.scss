@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--color-main);
+
+  h1,
+  h3 {
+    margin: 0;
+  }
+}
+
+.page-content {
+  margin-top: 50px;
+}

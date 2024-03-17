@@ -1,0 +1,45 @@
+<h3>{{ title }}</h3>
+<form class="form" [formGroup]="form" (ngSubmit)="handleSubmit()">
+  @if (actionType !== commentActionType.edit) {
+  <div class="form__group">
+    <label class="form__label">{{ "name" | translate }}</label>
+    <input
+      aria-label="User"
+      aria-required="true"
+      type="text"
+      formControlName="user"
+      [placeholder]="'namePlaceholder' | translate"
+    />
+  </div>
+  }
+
+  <div class="form__group">
+    <label class="form__label">{{ "comment" | translate }}</label>
+    <input
+      aria-label="Comment"
+      aria-required="true"
+      type="text"
+      formControlName="content"
+      [placeholder]="'commentPlaceholder' | translate"
+    />
+  </div>
+
+  <div class="form__actions">
+    <button
+      aria-label="Submit"
+      type="submit"
+      class="form__button form__button--submit"
+      [disabled]="!form.valid"
+    >
+      {{ "submit" | translate }}
+    </button>
+    <button
+      aria-label="Cancel"
+      type="button"
+      class="form__button form__button--cancel"
+      (click)="handleCancel()"
+    >
+      {{ "cancel" | translate }}
+    </button>
+  </div>
+</form>

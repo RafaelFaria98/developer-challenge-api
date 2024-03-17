@@ -1,0 +1,37 @@
+<app-language-selector [backButton]="true" />
+
+@if (!isLoading()) {
+<h2>{{ postDetails()?.title }}</h2>
+<section class="post-details">
+  <section class="post-details__info">
+    <p>{{ postDetails()?.description }}</p>
+    <address>
+      <span>{{ "by" | translate }}:</span> {{ postDetails()?.author }}
+    </address>
+    <time>{{ postDetails()?.publish_date | date }}</time>
+  </section>
+  <section>
+    <div [innerHTML]="postDetails()?.content | customHtml"></div>
+  </section>
+</section>
+
+@if (!isAddingComment()) {
+<button
+  aria-label="Add"
+  type="button"
+  (click)="isAddingComment.set(true)"
+  class="add-comment"
+>
+  {{ "addNewCommentTitle" | translate }}
+</button>
+} @else {
+<app-comment-form
+  [action]="commentAction"
+  (submitEvent)="addComment($event)"
+  (cancelEvent)="isAddingComment.set(false)"
+/>
+}
+
+<h2>{{ "commentsTitle" | translate }}</h2>
+<app-post-comments [comments]="comments()" />
+}

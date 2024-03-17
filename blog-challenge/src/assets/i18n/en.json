@@ -1,0 +1,21 @@
+{
+  "portuguese": "Portuguese",
+  "english": "English",
+  "quickSearch": "Search by post title",
+  "by": "By",
+  "addNewCommentTitle": "I have something to say about this post",
+  "commentsTitle": "What do people say about this post?",
+  "says": "says",
+  "edit": "Edit",
+  "reply": "Reply",
+  "name": "Name",
+  "comment": "Comment",
+  "namePlaceholder": "Insert your name here",
+  "commentPlaceholder": "Insert your comment here",
+  "submit": "Submit",
+  "cancel": "Cancel",
+  "editComment": "Edit comment",
+  "replyComment": "Reply comment",
+  "addNewComment": "Add new comment",
+  "backToPosts": "Back to posts"
+}

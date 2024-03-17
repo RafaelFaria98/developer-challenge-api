@@ -1,0 +1,12 @@
+<article class="post" routerLink="{{ post.id }}/{{ post.slug }}">
+  <header>
+    <h2 class="post__title">{{ post.title }}</h2>
+  </header>
+  <section>
+    <p>{{ post.description }}</p>
+  </section>
+  <footer class="post__footer">
+    <address>{{ post.author }}</address>
+    <time>{{ post.publish_date | date }}</time>
+  </footer>
+</article>

@@ -1,0 +1,19 @@
+<select
+  [ngModel]="selectedLanguage"
+  (ngModelChange)="changeLanguage($event)"
+  class="language-select"
+>
+  <option [value]="language.en">{{ "english" | translate }}</option>
+  <option [value]="language.pt">{{ "portuguese" | translate }}</option>
+</select>
+
+@if (backButton) {
+<button
+  aria-label="Back"
+  type="button"
+  class="back-button"
+  (click)="navigateToPosts()"
+>
+  {{ "backToPosts" | translate }}
+</button>
+}
